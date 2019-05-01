@@ -1,0 +1,13 @@
+<h1>Travel Diary Location Details: </h1>
+
+<h2>@Model.Name</h2>
+<h2>@Model.Notes</h2>
+<h2>@Model.Year</h2>
+<h2>@Model.GetId()</h2>
+
+<a href='/places/new'>Add another place</a>
+<a href='/places'>View all places</a>
+
+<form action="/places/@Model.GetId()" method="post">
+  <button type="submit" name="button">Delete This Location.</button>
+</form>
