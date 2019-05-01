@@ -60,10 +60,11 @@ namespace TravelDiary.Models
     {
       _instances.Clear();
     }
+
     public static List<Place> FindAll(string year)
     {
       List<Place> places = new List<Place>{};
-      for (int i = 0; i <= _instances.Count; i++)
+      for (int i = 0; i < _instances.Count; i++)
       {
         if (year == _instances[i].Year)
         {
